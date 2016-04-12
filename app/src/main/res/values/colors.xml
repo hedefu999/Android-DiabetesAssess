@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dark_green">#008080</color>
+    <color name="rb_grey">#d8d7d9</color>
+    <color name="main">#e0e0e0</color>
+    <color name="listview_odd_bac">#fff</color>
+    <color name="listview_even_bac">#ffe0eb</color>
+
+<color name="verymuchbelow">#00fff1</color>
+    <color name="muchbelow">#00ff84</color>
+    <color name="below">#15ff00</color>
+    <color name="average">#8aff00</color>
+    <color name="above">#ebff00</color>
+    <color name="muchabove">#ff8500</color>
+    <color name="verymuchabove">#ff0d00</color>
+
+</resources>

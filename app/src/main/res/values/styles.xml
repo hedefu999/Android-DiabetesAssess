@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarStyle">@style/myactionbar</item>
+    </style>
+
+    <style name="myactionbar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:displayOptions">useLogo</item>
+    </style>
+
+</resources>

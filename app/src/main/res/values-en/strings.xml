@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Evidence-based Diabetes Evaluation</string>
+
+    <!--the first page-->
+    <string name="info_title">Please fill in the request information</string>
+    <string name="info_gender">Gender</string>
+    <string name="info_female">female</string>
+    <string name="info_male">male</string>
+    <string name="info_age">age</string>
+    <string name="info_age_hint"> suitable for 18-80 years old people</string>
+    <string name="info_height">Height</string>
+    <string name="info_height_hint">cm as the unit</string>
+    <string name="info_weight"> Weight</string>
+    <string name="info_weight_hint"> 500g as a unit</string>
+    <string name="info_clear"> Clear</string>
+    <string name="info_ok"> Completed</string>
+    <string name="ban">You have not finished all the information!</string>
+    <string name="ban1"> You have not answered all the questions!</string>
+
+    <string name="page_1">NO.1(3 pages in total)</string>
+    <string name="personalinfo_hint">The next test will be based on your information</string>
+    <string name="next">next </string>
+    <string name="page_2">NO.2(3 pages in total)</string>
+    <string name="multichoices_helper">Choose the items by clicking on the word after the circle \n \u3000\u3000 19 in total</string>
+    <string name="former">previous </string>
+    <string name="result">NO.3(3 pages in total)</string>
+    <string name="result_help">RESULTS</string>
+
+    <string name="references">references>></string>
+    <string name="copy"> copy to clipboard and search for it</string>
+    <string name="copy_hint">\u3000\u3000\u3000have copied to clipboard\n Sorry!this function does not work now</string>
+    <string name="ok"> ok</string>
+
+    <!--   question array,please fill all the questions here-->
+    <string-array name="question">
+        <item>1. Please choose your gender(automatic selection)</item>
+        <item>2.Your age bracket(automatic slection)</item>
+        <item>3. Please choose your weight condition,use body mass indexBMI(BMI=weight(kg)/height(m)^2.automatic selection)</item>
+        <item>4. Your diabetes family history is</item>
+        <item>5. Your education background is</item>
+        <item>6.  Your economic income is </item>
+        <item>7. Are you smoking?</item>
+        <item>8. How many years do you smoke?</item>
+        <item>9.  Your daily sleep duration is</item>
+        <item>10.Your usual physical activity condition is</item>
+        <item>11.Do you have depressive disorder</item>
+        <item>12. Do you drink?if you drink ,how much you drink every day?</item>
+        <item>13.  Do you drink coffee every day ?</item>
+        <item>14. Do you drink milk or yoghourt and so on dairy products every day?</item>
+        <item>15.  Do you usually have meat ?which meat do you eat?(red meat refers to cattle and sheep,rabit meat fish,poultry meat.specially processed meat refers to smoked,roasted,fried,pickled meat)</item>
+        <item>16. How much fruit do you eat every day?</item>
+        <item>17.  How many kinds of fruits do you eat every week?</item>
+        <item>18.  How much vegetables do you eat every day?</item>
+        <item>19. How many kinds of vegetables do you eat every week?</item>
+    </string-array>
+    <!--here set the orientation of each subject options, 0 means vertically, 1 means horizontally arranged-->
+
+    <integer-array name="orientation">
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <!--here offers the option of each question, there must be five items, do not wish to show we set it to English word void-->
+
+    <string-array name="answer1">
+        <item>female\u3000\u3000\u3000</item>
+        <item>male</item>
+        <item>void</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer2">
+        <item> 0-44 years old</item>
+        <item> 45-64 years old</item>
+        <item> 65-74 years old</item>
+        <item> 75 years old</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer3">
+        <item>less than 18.5</item>
+        <item>18.5-24.0</item>
+        <item>24.0-28.0</item>
+        <item>over 28</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer4">
+        <item>neither of parents has diabetes</item>
+        <item>only father has diabetes</item>
+        <item>only mather has diabetes</item>
+        <item>both of them have diabetes</item>
+        <item>void</item>
+    </string-array>
+
+    <!--zero setting content will be automatically hidden-->
+
+    <string-array name="answer5">
+        <item>  less than middle school education</item>
+        <item>middle school education(junior high school or senior high school)</item>
+        <item>    more than middle school education</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer6">
+        <item>not low income family</item>
+        <item>low income family(or enjoy minimum living standard)</item>
+        <item>void</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer7">
+        <item>never smoke</item>
+        <item>  less than a packet( 20 cigaratters)every day</item>
+        <item>  more than 20 cigaratters every day</item>
+        <item>used to smoke,but now quit.</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer8">
+        <item>never smoke or less than six years</item>
+        <item>  6-12years</item>
+        <item>  over 13 years</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer9">
+        <item>  less than 7 hours every day</item>
+        <item>  7-9 hours every day</item>
+        <item> more than 9 hours every day</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer10">
+        <item>  little movement</item>
+        <item>  moderate strength physical activity(include cut it,ride on a bicycle,horticulture)</item>
+        <item>void</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer11">
+        <item> no\u3000\u3000\u3000</item>
+        <item>  yes</item>
+        <item>void</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer12">
+        <item> not drink or less than six ml every day</item>
+        <item>  6-12 ml every day</item>
+        <item>  nearly 25 ml of wine a day</item>
+        <item>  nearly 50 ml wine a day</item>
+        <item>   over 50 ml wine</item>
+
+    </string-array>
+    <string-array name="answer13">
+        <item> never drink\u3000\u3000</item>
+        <item>  drink every day</item>
+        <item>void</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer14">
+        <item> no\u3000\u3000\u3000</item>
+        <item> yes</item>
+        <item>void</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer15">
+        <item>  eat no meat</item>
+        <item> just eat white meat,seldom eat red meat</item>
+        <item>eat more red meat,but not specially processed</item>
+        <item> eat the flesh of varieties is complex, including red meat,white meat</item>
+        <item>   often eat barbecue, smoked, fried and salted meat</item>
+    </string-array>
+    <string-array name="answer16">
+        <item>  less(about 48g)</item>
+        <item>medium(about 144g)</item>
+        <item>  more(about 272g)</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer17">
+        <item> less(1-3 items)</item>
+        <item>medium(4-5 items)</item>
+        <item>  more(6-8 items)</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer18">
+        <item>  less(about 88g)</item>
+        <item> medium(about 136g)</item>
+        <item>more(about 208g)</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer19">
+        <item>less(4-7 items)</item>
+        <item>  medium(8-9 items)</item>
+        <item>  more(10-13 items)</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <!--references-->
+    <string-array name="reference">
+        <item>http://www.cdc.gov/diabetes/statistics/prev/national/figbysex.htm</item>
+        <item>.http://www.cdc.gov/diabetes/statistics/prev/national/fig2004.htm</item>
+        <item>董会敏, 高秋菊, 闫玉英,等. 体重指数、腰围预测成人高血压和(或)糖尿病的危险度及交互作用分析[J].河北医药, 2010, 32(6):678-680.</item>
+        <item>柳剑, 蓝绍颖. 2型糖尿病危险因素的流行病学研究进展[J]. 南通大学学报：医学版, 2006, 26(03):230-232.</item>
+        <item>http://www.cdc.gov/diabetes/statistics/prev/national/figbyeducation.html</item>
+        <item>Larrañaga I, Arteagoitia J M, Rodriguez J L, et al. Socio-economic inequalities in the prevalence of Type 2 diabetes, cardiovascular risk factors and chronic diabetic complications in the Basque Country, Spain.[J]. Diabetic Medicine, 2005, 22(8):1047–1053.</item>
+        <item>Carlsson S, Midthjell K, Grill V. Smoking is associated with an increased risk of type 2 diabetes but a decreased risk of autoimmune diabetes in adults: an 11-year follow-up of incidence of diabetes in the Nord-Trøndelag study[J]. Diabetologia, 2004, 47(11): 1953-1956.</item>
+        <item>Carlsson S, Midthjell K, Grill V. Smoking is associated with an increased risk of type 2 diabetes but a decreased risk of autoimmune diabetes in adults: an 11-year follow-up of incidence of diabetes in the Nord-Trøndelag study[J]. Diabetologia, 2004, 47(11): 1953-1956.</item>
+        <item>高明, 李俊娟, 吴云涛,等. 睡眠时间与2型糖尿病发病风险的相关性研究[J]. 中华内分泌代谢杂志, 2014, 30(5):393-396.</item>
+        <item>王卉, 刘冬梅, 彭勇. 中等强度体力活动与T2DM风险——系统综述[J]. 井冈山大学学报：自然科学版, 2011(05):115-120.</item>
+        <item>周露. 抑郁是2型糖尿病危险因素的系统评价[D]. 广西医科大学, 2012.</item>
+        <item>柳剑, 蓝绍颖. 2型糖尿病危险因素的流行病学研究进展[J]. 南通大学学报：医学版, 2006, 26(03):230-232.</item>
+        <item>石瑀, 董加毅, 张增利,等. 饮用咖啡与2型糖尿病队列研究的meta分析[J]. 苏州大学学报：医学版, 2012(1):89-94.</item>
+        <item>Tong X, Dong J, Wu Z. Dairy consumption and risk of type 2 diabetes mellitus: a meta-analysis of cohort studies[J]. European Journal of Clinical Nutrition, 2011, 65(9).</item>
+        <item>Feskens E J M, Sluik D, Woudenbergh G J V. Meat Consumption, Diabetes, and Its Complications[J]. Current Diabetes Reports, 2013, 13(2):298-306.</item>
+        <item>Cooper A J, Sharp S J, Lentjes M A H, et al. A prospective study of the association between quantity and variety of fruit and vegetable intake and incident type 2 diabetes.[J]. Diabetes Care, 2012, 35(6):1293-1300.</item>
+        <item>Cooper A J, Sharp S J, Lentjes M A H, et al. A prospective study of the association between quantity and variety of fruit and vegetable intake and incident type 2 diabetes.[J]. Diabetes Care, 2012, 35(6):1293-1300.</item>
+        <item>Cooper A J, Sharp S J, Lentjes M A H, et al. A prospective study of the association between quantity and variety of fruit and vegetable intake and incident type 2 diabetes.[J]. Diabetes Care, 2012, 35(6):1293-1300.</item>
+        <item>Cooper A J, Sharp S J, Lentjes M A H, et al. A prospective study of the association between quantity and variety of fruit and vegetable intake and incident type 2 diabetes.[J]. Diabetes Care, 2012, 35(6):1293-1300.</item>
+    </string-array>
+    <string-array name="risk_level">
+        <item>very much below average risk</item>
+        <item>much below average risk</item>
+        <item>below average risk</item>
+        <item>about average risk</item>
+        <item>above average risk</item>
+        <item>much above average risk</item>
+        <item>very much above average risk</item>
+    </string-array>
+    <string name="di">NO.</string>
+    <string name="tixuanzele">：</string>
+    <string name="gexuanxiagrr">rd item，RR=</string>
+    <string name="sum">summary of RRs is :</string>
+    <string name="result_arrow">result</string>
+    <string name="last_result">Level of Risk</string>
+    <string name="thank">Thanks For Your Attention :-)</string>
+    <string name="average_set">111 by default,only for professional user</string>
+    <string name="rpduiying">,risk points=</string>
+</resources>

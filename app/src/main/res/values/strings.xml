@@ -1,0 +1,255 @@
+<resources>
+    <string name="app_name">糖尿病评估</string>
+    <!--第一界面-->
+    <string name="info_title">请填写咨询信息</string>
+    <string name="info_gender">性别</string>
+    <string name="info_female">\u3000女</string>
+    <string name="info_male">\u3000男</string>
+    <string name="info_age">年龄</string>
+    <string name="info_age_hint">建议18-80岁人群使用本测试</string>
+    <string name="info_height">身高</string>
+    <string name="info_height_hint">以厘米(cm)为单位</string>
+    <string name="info_weight">体重</string>
+    <string name="info_weight_hint">以斤(500g)为单位</string>
+    <string name="info_clear">清空</string>
+    <string name="info_ok">填写完成</string>
+    <string name="ban">您没有填写完整的信息</string>
+    <string name="ban1">您没有作答完所有题目</string>
+
+    <string name="page_1">第1页(共3页)</string>
+    <string name="personalinfo_hint">所填信息将作为下一步调查的参考信息</string>
+    <string name="next">下一页</string>
+    <string name="page_2">第2页(共3页)</string>
+    <string name="multichoices_helper">请如实回答问题，点击圆圈后的汉字进行选择,共19题</string>
+    <string name="former">上一页</string>
+    <string name="result">第3页(共3页)</string>
+    <string name="result_arrow">显示结果</string>
+    <string name="result_help">您的选择结果</string>
+
+    <string name="references">参考文献>></string>
+    <string name="copy">复制并搜索</string>
+    <string name="copy_hint">\u3000\u3000\u3000已复制到剪贴板\n家里没网没空调的这个功能再等等吧</string>
+    <string name="ok">好的</string>
+    <!--问题数组，请在这里填写各问题-->
+    <string-array name="question">
+        <item>1.请选择您的性别(自动选择)</item>
+        <item>2.您的年龄段是(自动选择)</item>
+        <item>3.请选择您的体重情况,用体重指数BMI衡量(BMI=体重(千克)/身高(米)的平方.</item>
+        <item>4.您的糖尿病家族病史情况是</item>
+        <item>5.您的学历情况是</item>
+        <item>6.您的经济收入状况是</item>
+        <item>7.您吸烟吗</item>
+        <item>8.您吸烟的烟龄是多少年？</item>
+        <item>9.您每天的睡眠时长是</item>
+        <item>10.您平时的体力活动状况是</item>
+        <item>11.您患有抑郁症吗？</item>
+        <item>12.您每天喝酒吗,如果喝那每天喝多少？</item>
+        <item>13.您每天会喝咖啡吗？</item>
+        <item>14.你每天会喝牛奶或是酸奶等乳制品吗？</item>
+        <item>15.您平时吃饭都吃肉吗？会吃那些肉？（红肉指牛、羊、兔肉，白肉指鱼肉、禽肉。特殊加工过的肉指烟熏、烧烤、油炸、腌制的肉）</item>
+        <item>16.您每天吃多少水果？</item>
+        <item>17.您每周大概能吃多少种水果？</item>
+        <item>18.您每天吃多少蔬菜？</item>
+        <item>19.您每周大概吃多少种蔬菜？</item>
+
+
+    </string-array>
+    <!--在这里设置每道题目的选项的排列方向，0表示垂直排列，1表示水平排列-->
+    <integer-array name="orientation">
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <!--这里提供每道题的选项，必须有五个条目，希望不显示的就将它设置为英文单词void吧（“虚空，没有”的意思）-->
+    <string-array name="answer1">
+        <item>女\u3000\u3000  </item>
+        <item>男 </item>
+        <item>void</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer2">
+        <item>0-44岁</item>
+        <item>45-64岁</item>
+        <item>65-74岁</item>
+        <item>大于75岁</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer3">
+        <item>小于18.5</item>
+        <item>18.5-24.0</item>
+        <item>24.0-28.0</item>
+        <item>超过28</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer4">
+        <item>父母都没有糖尿病</item>
+        <item>仅父亲有糖尿病</item>
+        <item>仅母亲有糖尿病</item>
+        <item>父母都有糖尿病</item>
+        <item>void</item><!--设置内容为零会被自动隐藏掉-->
+    </string-array>
+    <string-array name="answer5">
+        <item>中学以下学历</item>
+        <item>中学学历(初中或高中)</item>
+        <item>中学以上学历</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer6">
+        <item>不是贫困户</item>
+        <item>是贫困户(或享受低保)</item>
+        <item>void</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer7">
+        <item>从不吸烟</item>
+        <item>每天少于一包(20根)</item>
+        <item>每天多于20根</item>
+        <item>以前吸烟,但是现在戒掉了</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer8">
+        <item>从不吸烟或小于6年</item>
+        <item>6-12年</item>
+        <item>13年以上</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer9">
+        <item>每天小于7小时</item>
+        <item>每天7-9小时</item>
+        <item>每天超过9小时</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer10">
+        <item>基本不运动</item>
+        <item>中等强度体力活动(包括快走、骑自行车、园艺等)</item>
+        <item>void</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer11">
+        <item>没有\u3000</item>
+        <item>有</item>
+        <item>void</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer12">
+        <item>每天不喝或少于6毫升</item>
+        <item>每天6-12毫升</item>
+        <item>每天将近半两酒</item>
+        <item>每天将近一两酒</item>
+        <item>每天超过一两酒</item>
+    </string-array>
+    <string-array name="answer13">
+        <item>不喝\u3000</item>
+        <item>每天都喝</item>
+        <item>void</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer14">
+        <item>不会\u3000</item>
+        <item>会的</item>
+        <item>void</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer15">
+        <item>不吃肉</item>
+        <item>只吃白肉,很少吃红肉</item>
+        <item>多吃红肉,但不是特殊加工过的</item>
+        <item>食用的肉品种比较复杂,包括红白肉</item>
+        <item>会经常吃烧烤,烟熏,油炸,腌制的肉</item>
+    </string-array>
+    <string-array name="answer16">
+        <item>较少(48克左右)</item>
+        <item>中等(144克左右)</item>
+        <item>较多(272克左右)</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer17">
+        <item>较少(1-3种)</item>
+        <item>中等(4-5种)</item>
+        <item>较多(6-8种)</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer18">
+        <item>较少(88克左右)</item>
+        <item>中等(136克左右)</item>
+        <item>较多(208克左右)</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="answer19">
+        <item>较少(4-7种)</item>
+        <item>中等(8-9种)</item>
+        <item>较多(10-13种)</item>
+        <item>void</item>
+        <item>void</item>
+    </string-array>
+    <!--这里是参考文献-->
+    <string-array name="reference">
+        <item>http://www.cdc.gov/diabetes/statistics/prev/national/figbysex.htm</item>
+        <item>.http://www.cdc.gov/diabetes/statistics/prev/national/fig2004.htm</item>
+        <item>董会敏, 高秋菊, 闫玉英,等. 体重指数、腰围预测成人高血压和(或)糖尿病的危险度及交互作用分析[J].河北医药, 2010, 32(6):678-680.</item>
+        <item>柳剑, 蓝绍颖. 2型糖尿病危险因素的流行病学研究进展[J]. 南通大学学报：医学版, 2006, 26(03):230-232.</item>
+        <item>http://www.cdc.gov/diabetes/statistics/prev/national/figbyeducation.html</item>
+        <item>Larrañaga I, Arteagoitia J M, Rodriguez J L, et al. Socio-economic inequalities in the prevalence of Type 2 diabetes, cardiovascular risk factors and chronic diabetic complications in the Basque Country, Spain.[J]. Diabetic Medicine, 2005, 22(8):1047–1053.</item>
+        <item>Carlsson S, Midthjell K, Grill V. Smoking is associated with an increased risk of type 2 diabetes but a decreased risk of autoimmune diabetes in adults: an 11-year follow-up of incidence of diabetes in the Nord-Trøndelag study[J]. Diabetologia, 2004, 47(11): 1953-1956.</item>
+        <item>Carlsson S, Midthjell K, Grill V. Smoking is associated with an increased risk of type 2 diabetes but a decreased risk of autoimmune diabetes in adults: an 11-year follow-up of incidence of diabetes in the Nord-Trøndelag study[J]. Diabetologia, 2004, 47(11): 1953-1956.</item>
+        <item>高明, 李俊娟, 吴云涛,等. 睡眠时间与2型糖尿病发病风险的相关性研究[J]. 中华内分泌代谢杂志, 2014, 30(5):393-396.</item>
+        <item>王卉, 刘冬梅, 彭勇. 中等强度体力活动与T2DM风险——系统综述[J]. 井冈山大学学报：自然科学版, 2011(05):115-120.</item>
+        <item>周露. 抑郁是2型糖尿病危险因素的系统评价[D]. 广西医科大学, 2012.</item>
+        <item>柳剑, 蓝绍颖. 2型糖尿病危险因素的流行病学研究进展[J]. 南通大学学报：医学版, 2006, 26(03):230-232.</item>
+        <item>石瑀, 董加毅, 张增利,等. 饮用咖啡与2型糖尿病队列研究的meta分析[J]. 苏州大学学报：医学版, 2012(1):89-94.</item>
+        <item>Tong X, Dong J, Wu Z. Dairy consumption and risk of type 2 diabetes mellitus: a meta-analysis of cohort studies[J]. European Journal of Clinical Nutrition, 2011, 65(9).</item>
+        <item>Feskens E J M, Sluik D, Woudenbergh G J V. Meat Consumption, Diabetes, and Its Complications[J]. Current Diabetes Reports, 2013, 13(2):298-306.</item>
+        <item>Cooper A J, Sharp S J, Lentjes M A H, et al. A prospective study of the association between quantity and variety of fruit and vegetable intake and incident type 2 diabetes.[J]. Diabetes Care, 2012, 35(6):1293-1300.</item>
+        <item>Cooper A J, Sharp S J, Lentjes M A H, et al. A prospective study of the association between quantity and variety of fruit and vegetable intake and incident type 2 diabetes.[J]. Diabetes Care, 2012, 35(6):1293-1300.</item>
+        <item>Cooper A J, Sharp S J, Lentjes M A H, et al. A prospective study of the association between quantity and variety of fruit and vegetable intake and incident type 2 diabetes.[J]. Diabetes Care, 2012, 35(6):1293-1300.</item>
+        <item>Cooper A J, Sharp S J, Lentjes M A H, et al. A prospective study of the association between quantity and variety of fruit and vegetable intake and incident type 2 diabetes.[J]. Diabetes Care, 2012, 35(6):1293-1300.</item>
+    </string-array>
+    <string-array name="risk_level">
+        <item>糖尿病患病风险极低</item>
+        <item>患糖尿病风险很低</item>
+        <item>较低患病风险</item>
+        <item>普通风险值</item>
+        <item>较高风险</item>
+        <item>很高风险</item>
+        <item>极高患病风险</item>
+    </string-array>
+    <string name="di">第</string>
+    <string name="tixuanzele">题选</string>
+    <string name="gexuanxiagrr">选项,RR=</string>
+    <string name="sum">总的RR值之和：</string>
+    <string name="last_result">最终结果：</string>
+    <string name="thank">感谢使用本软件</string>
+    <string name="average_set">默认111，由调查人员操作</string>
+    <string name="rpduiying">,riskpoints=</string>
+</resources>
